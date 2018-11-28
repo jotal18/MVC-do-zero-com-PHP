@@ -2,13 +2,23 @@
 
 namespace app\controllers\portal;
 
-class CursoController {
+use app\controllers\ContainerController;
+
+class CursoController extends ContainerController {
 
 	public function index() {
 
 	}
 
-	public function show() {
+	public function show($request) {
+
+		// $cursos = new app\models\portal\Cursos;
+		// $cursoEncontrado = $cursos->find('slug', $request->parameter);
+
+		$this->view([
+			'tittle' => 'Curso',
+			// 'curso' => $cursoEncontrado,
+		], 'portal.curso');
 
 	}
 

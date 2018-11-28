@@ -1,0 +1,22 @@
+{% extends 'portal/layout.html' %}
+
+
+{% block portal %}
+	
+	<!-- Mostra variável -->
+	{{ teste()}}
+
+	<!-- Foreach  -->
+	<!-- {% for curso in curso %}
+
+		curso.title
+
+	{% endfor %} -->
+
+	<!-- Seta uma variável -->
+	{% set name = 'Alexandre' %}
+
+	<!-- Recupera valor de uma variável -->
+	{{ name }}
+
+{% endblock %}
